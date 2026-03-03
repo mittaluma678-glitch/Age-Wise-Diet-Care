@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Age Wise Diet Care — Personalized diet plans for every age group. From kids to seniors, discover nutrition tips, BMI calculator, and healthy eating guides.">
+    <title>Age Wise Diet Care — Healthy Eating for Every Age</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥗</text></svg>">
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="nav-logo">AgeWise Diet</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#plans">Diet Plans</a></li>
+            <li><a href="#bmi">BMI Calculator</a></li>
+            <li><a href="#tips">Health Tips</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="dot"></span>
+                Science-backed nutrition for all ages
+            </div>
+            <h1>
+                Eat Right at<br>
+                <span class="gradient-text">Every Age</span>
+            </h1>
+            <p>Your body's needs change with time. Discover personalized diet plans designed for kids, teens, adults,
+                and seniors — backed by nutrition science.</p>
+            <div class="hero-buttons">
+                <a href="#plans" class="btn btn-primary">Explore Diet Plans →</a>
+                <a href="#bmi" class="btn btn-secondary">Check Your BMI</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== STATS BAR ===== -->
+    <div class="stats-bar reveal">
+        <div class="stat-item">
+            <div class="stat-number" data-target="4" data-suffix="+">0</div>
+            <div class="stat-label">Age Groups</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number" data-target="50" data-suffix="+">0</div>
+            <div class="stat-label">Diet Items</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number" data-target="1000" data-suffix="+">0</div>
+            <div class="stat-label">Happy Users</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number" data-target="100" data-suffix="%">0</div>
+            <div class="stat-label">Free Forever</div>
+        </div>
+    </div>
+
+    <!-- ===== DIET PLANS ===== -->
+    <section class="section" id="plans">
+        <div class="section-header reveal">
+            <span class="section-label">Nutrition Plans</span>
+            <h2 class="section-title">Diet Plans for Every Age</h2>
+            <p class="section-desc">Tailored nutrition guides to help you fuel your body right — whether you're growing,
+                thriving, or aging gracefully.</p>
+        </div>
+
+        <div class="diet-grid">
+            <div class="diet-card reveal" onclick="openDietPlan('kids')">
+                <div class="card-icon">👶</div>
+                <h3>Kids Nutrition</h3>
+                <span class="age-range">Age 5 – 12 years</span>
+                <p>High protein meals, milk, fruits, green vegetables and calcium-rich diet. Growth needs the best fuel!
+                </p>
+                <div class="food-tags">
+                    <span class="food-tag">Milk</span>
+                    <span class="food-tag">Eggs</span>
+                    <span class="food-tag">Fruits</span>
+                    <span class="food-tag">Veggies</span>
+                    <span class="food-tag">Nuts</span>
+                </div>
+                <span class="card-link">View Full Plan →</span>
+            </div>
+
+            <div class="diet-card reveal" onclick="openDietPlan('teens')">
+                <div class="card-icon">🧑</div>
+                <h3>Teen Power Diet</h3>
+                <span class="age-range">Age 13 – 19 years</span>
+                <p>Iron-rich foods, whole grains, eggs, pulses and fruits. Control fast food and build real strength!
+                </p>
+                <div class="food-tags">
+                    <span class="food-tag">Iron</span>
+                    <span class="food-tag">Grains</span>
+                    <span class="food-tag">Pulses</span>
+                    <span class="food-tag">Protein</span>
+                    <span class="food-tag">Fiber</span>
+                </div>
+                <span class="card-link">View Full Plan →</span>
+            </div>
+
+            <div class="diet-card reveal" onclick="openDietPlan('adults')">
+                <div class="card-icon">💪</div>
+                <h3>Adult Balanced Diet</h3>
+                <span class="age-range">Age 20 – 45 years</span>
+                <p>Balanced macros — carbs, protein, fiber, healthy fats. Stay hydrated and keep your energy high!</p>
+                <div class="food-tags">
+                    <span class="food-tag">Protein</span>
+                    <span class="food-tag">Healthy Fats</span>
+                    <span class="food-tag">Fiber</span>
+                    <span class="food-tag">Hydration</span>
+                </div>
+                <span class="card-link">View Full Plan →</span>
+            </div>
+
+            <div class="diet-card reveal" onclick="openDietPlan('seniors')">
+                <div class="card-icon">👴</div>
+                <h3>Senior Wellness Diet</h3>
+                <span class="age-range">Age 45+ years</span>
+                <p>Low salt, high fiber, calcium-rich, light meals. Keep your heart and bones strong every day!</p>
+                <div class="food-tags">
+                    <span class="food-tag">Low Sodium</span>
+                    <span class="food-tag">Calcium</span>
+                    <span class="food-tag">Fiber</span>
+                    <span class="food-tag">Light Meals</span>
+                </div>
+                <span class="card-link">View Full Plan →</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BMI CALCULATOR ===== -->
+    <section class="bmi-section" id="bmi">
+        <div class="section-header reveal">
+            <span class="section-label">Health Check</span>
+            <h2 class="section-title">BMI Calculator</h2>
+            <p class="section-desc">Check your Body Mass Index to understand your health status and get personalized
+                recommendations.</p>
+        </div>
+
+        <div class="bmi-container reveal">
+            <div class="bmi-form">
+                <h2>Calculate Your BMI</h2>
+                <p class="subtitle">Enter your details below</p>
+                <div class="form-group">
+                    <label for="weight">Weight (kg)</label>
+                    <input type="number" id="weight" placeholder="e.g. 65" min="1" max="300">
+                </div>
+                <div class="form-group">
+                    <label for="height">Height (cm)</label>
+                    <input type="number" id="height" placeholder="e.g. 170" min="50" max="250">
+                </div>
+                <button class="btn btn-primary btn-calc" onclick="calculateBMI()">Calculate BMI →</button>
+            </div>
+            <div class="bmi-result-panel">
+                <div class="bmi-result-circle">
+                    <span class="bmi-value">—</span>
+                    <span class="bmi-unit">BMI</span>
+                </div>
+                <div class="bmi-category">Enter your details</div>
+                <p class="bmi-advice">Fill in your weight and height to calculate your Body Mass Index and receive
+                    health advice.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HEALTH TIPS ===== -->
+    <section class="section" id="tips">
+        <div class="section-header reveal">
+            <span class="section-label">Daily Wellness</span>
+            <h2 class="section-title">Health Tips That Work</h2>
+            <p class="section-desc">Simple, proven habits to boost your health and energy levels at any age.</p>
+        </div>
+
+        <div class="tips-grid">
+            <div class="tip-card reveal">
+                <span class="tip-icon">💧</span>
+                <h3>Stay Hydrated</h3>
+                <p>Drink at least 8 glasses of water daily. Hydration boosts metabolism, skin health, and brain
+                    function.</p>
+            </div>
+            <div class="tip-card reveal">
+                <span class="tip-icon">🥦</span>
+                <h3>Eat Your Greens</h3>
+                <p>Green vegetables are rich in vitamins, minerals, and antioxidants. Include them in every meal.</p>
+            </div>
+            <div class="tip-card reveal">
+                <span class="tip-icon">😴</span>
+                <h3>Sleep 7-8 Hours</h3>
+                <p>Quality sleep is essential for recovery, mental health, and maintaining a healthy weight.</p>
+            </div>
+            <div class="tip-card reveal">
+                <span class="tip-icon">🏃</span>
+                <h3>Exercise Daily</h3>
+                <p>Just 30 minutes of physical activity can improve cardiovascular health and reduce stress
+                    significantly.</p>
+            </div>
+            <div class="tip-card reveal">
+                <span class="tip-icon">🚫</span>
+                <h3>Avoid Junk Food</h3>
+                <p>Processed foods are high in sugar, sodium, and unhealthy fats. Choose whole foods instead.</p>
+            </div>
+            <div class="tip-card reveal">
+                <span class="tip-icon">🧘</span>
+                <h3>Manage Stress</h3>
+                <p>Practice meditation or deep breathing. Chronic stress impacts digestion, sleep, and overall health.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section id="contact">
+        <div class="newsletter reveal">
+            <h2>Get Weekly Diet Tips 💌</h2>
+            <p>Subscribe to receive personalized nutrition advice, healthy recipes, and wellness tips straight to your
+                inbox.</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="nav-logo">AgeWise Diet</a>
+                <p>Your trusted companion for age-appropriate nutrition. Eat smart, live healthy, at every stage of
+                    life.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#plans">Diet Plans</a></li>
+                    <li><a href="#bmi">BMI Calculator</a></li>
+                    <li><a href="#tips">Health Tips</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Diet Plans</h4>
+                <ul>
+                    <li><a href="#" onclick="openDietPlan('kids'); return false;">Kids (5-12)</a></li>
+                    <li><a href="#" onclick="openDietPlan('teens'); return false;">Teens (13-19)</a></li>
+                    <li><a href="#" onclick="openDietPlan('adults'); return false;">Adults (20-45)</a></li>
+                    <li><a href="#" onclick="openDietPlan('seniors'); return false;">Seniors (45+)</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Nutrition Blog</a></li>
+                    <li><a href="#">Healthy Recipes</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Age Wise Diet Care. All rights reserved.</span>
+            <div class="socials">
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== DIET PLAN MODAL ===== -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 id="modalTitle">Diet Plan</h2>
+                <button class="modal-close" id="modalClose" aria-label="Close Modal">✕</button>
+            </div>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
